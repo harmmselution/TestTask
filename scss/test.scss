@@ -1,0 +1,56 @@
+@import "_normalize.scss";
+.wrapper {
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(27, 15, 15, 0.664);
+}
+.post-form {
+    position: relative;
+    border: 1px solid white;
+    transform: skew(-45deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.post-from {
+	&__input {
+    padding: 10px;
+    height: 100%;
+     transform: skew(45deg);
+    background-color: transparent; 
+    outline:none;
+		}
+
+	&__order {
+     padding: 20px;
+    cursor: pointer;
+    border:1px solid white;
+    background-color: rgba(255, 0, 0, 0.986);
+    color:white;
+    text-transform: uppercase;
+		}
+}
+
+.post-from__order {
+    & span {
+        display: block;
+        transform: skew(45deg);
+    }
+} 
+
+@media (max-width:479px) {
+    
+    .post-form  {
+        transform:none;
+        &__input {
+            transform: none;
+        }
+    }
+    .post-from__order span {
+        transform: none;
+    }
+   
+}
+
+
+
